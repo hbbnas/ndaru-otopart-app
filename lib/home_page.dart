@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+//Statefull Widget adalah widget yang digunakan untuk menampilkan data-data yang dinamis 
+//atau data yang kita telah tampilkan sewaktu-waktu dapat mengalami perubahan.
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -35,6 +38,9 @@ class _HomePageState extends State<HomePage> {
   )
   ..loadRequest(Uri.parse('https://hbbnas.github.io/ndaru-otopart/'));
   }
+
+  //Penggunaan Scaffold, Scaffold adalah widget utama untuk membuat sebuah halaman pada flutter
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
